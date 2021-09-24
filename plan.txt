@@ -1,0 +1,36 @@
+Room renovation:			ETA: 35h
+
+
+    1. Prepare the room:
+	- discard unnecessary or damaged furniture 1h
+	- move furniture to an adjacent room 2h
+	- secure furniture which cannot be moved with foil, 1h
+
+    2. Dismantling:
+	- removal of old mouldings 1h
+	- scraping off drywall 2h
+
+    3. Walls:
+	- wet the walls and wait one hour 1h
+	- remove old paint 3h
+	- remove glue 2h
+	- plaster the ceiling and walls 2h
+	- smoothen walls with plaster 2h
+	- sand the walls after the plaster has dried 1h
+
+    4. Painting the ceiling and walls::
+	- painting the ceiling 1h
+	- painting the walls 2h
+	- after the first layer of paint dries, paint again 2h
+
+    5. Lay floor panels or tiles::
+	- clean the floor after previous work 1h
+	- put down a layer of floor insulation 1h
+	- install underlay 1h
+	- lay the floor panels 2h
+
+    6. Finishing:
+	- install the floor mouldings 1h
+	- cleaning after the renovation 1h
+	- moving in the furniture 1h
+	- decorating the room 1h
