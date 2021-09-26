@@ -1,125 +1,103 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body {background-color: rgb(59, 143, 38);}
-html, body {margin: 0; height: 100%; overflow: hidden}
+
+body {
+    background-color: rgb(59, 143, 38);
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
 
 .Header {
-    padding: 5%;
+    padding: 50px;
     text-align: center;
     background: rgb(100, 129, 32);
     color: rgb(255, 255, 255);
     font-size: 30px;
     border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
 }
+
 .RightSideBox {
     padding: 50px;
-    float: right;
-    position: relative;
     text-align: center;
-    font-size: 110%;
-    width: 15%;
-    height: 50%;
+    font-size: 37px;
+    width: 230px;
+    height: 450px;
     border: 2px solid rgb(0, 0, 0);
-    margin: 20px;
+    margin-top: -200px;
+    margin-right: 30px;
+    margin-left: 50px;
 }
-@media screen and (min-width: 901px){
-    .RightSideBox {
-        background-color: rgb(255, 255, 255);
-    }
-}
-@media screen and (min-width: 583px) and (max-width: 900px) {
-    .RightSideBox {
-        background-color: rgb(150, 0, 0);
-    }
-}
-@media screen and (max-width: 583px) {
-    .RightSideBox {
-        background-color: rgb(38, 0, 255);
-        position: absolute;
-        left: 20%;
-        bottom: 0%;
-    }
-}
+
 .Circle {
-    position: relative;
-    left: 60%;
-    top: 12%;
-    width: 15vw;
-    height: 15vw;
+    width: 140px;
+    height: 140px;
     background-color: rgb(64, 143, 132);
     border-radius: 100px;
     border: 2px solid rgb(0, 0, 0);
-    margin: 2%;
+    margin-top: 40px;
+    margin-left: 40px;
 }
-@media screen and (min-width: 583px) and (max-width: 900px) {
-    .Circle {
-        position: absolute;
-        left: 30%;
-        top: 75%;
-    }
-}
+
 .RectangleTop {
-    position: relative;
-    left: 40%;
-    bottom: 5%;
-    width: 20vw;
-    height: 4vw;
+    width: 200px;
+    height: 30px;
     background-color: rgb(38, 0, 255);
     border: 2px solid rgb(0, 0, 0);
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 400px;
+    margin-right: 1px;
 }
-@media screen and (min-width: 583px) and (max-width: 900px) {
-    .RectangleTop {
-        position: absolute;
-        left: 2%;
-        top: 77%;
-    }
-}
+
 .RectangleBottom {
-    position: relative;
-    left: 40%;
-    top: 0px;
-    width: 20vw;
-    height: 4vw;
+    width: 200px;
+    height: 30px;
     background-color: rgb(38, 0, 255);
     border: 2px solid rgb(0, 0, 0);
+    margin-left: 400px;
+    margin-top: 30px;
+    margin-right: 1px;
 }
-@media screen and (min-width: 583px) and (max-width: 900px) {
-    .RectangleBottom {
-        position: absolute;
-        left: 2%;
-        top: 87%;
-    }
-}
+
 .DiamondTop {
     position: relative;
-    top: -320px;
-    left: 170px;
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     border: 90px solid transparent;
     border-bottom-color: rgb(255, 0, 0);
+    margin-top: -100px;
+    margin-left: 200px;
 }
+
 .DiamondTop:after {
     content: '';
     position: absolute;
     top: 90px;
     left: -90px;
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     border: 90px solid transparent;
     border-top-color: rgb(255, 0, 0);
 }
-  .DiamondBottom  {
+
+.DiamondBottom {
     position: relative;
-    top: -350px;
-    left: 20px;
     width: 0;
     height: 0;
     border: 90px solid transparent;
     border-bottom-color: rgb(255, 0, 0);
+    margin-top: 50px;
+    margin-left: -330px;
 }
+
 .DiamondBottom:after {
     content: '';
     position: absolute;
@@ -129,4 +107,73 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     height: 0;
     border: 90px solid transparent;
     border-top-color: rgb(255, 0, 0);
+}
+
+.RectangleRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1px;
+    margin-top: -170px;
+}
+
+.DiamondRow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+
+.RightSideBoxRow {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.RightSideBoxAndRectangles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+.AllRows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 901px) {
+    .RightSideBox {
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 583px) and (max-width: 900px) {
+    .RectangleRow {
+        position: absolute;
+        margin-top: 500px;
+        margin-left: -400px;
+    }
+    .RightSideBox {
+        background-color: rgb(150, 0, 0);
+    }
+    .RightSideBoxRow {
+        float: right;
+        position: absolute;
+        left: 450px;
+    }
+}
+
+@media screen and (max-width: 583px) {
+    .RightSideBoxRow {
+        position: absolute;
+        left: 50px;
+        bottom: 90px;
+    }
+    .RightSideBox {
+        background-color: rgb(38, 0, 255);
+    }
+    .RectangleRow {
+        position: absolute;
+        margin-top: -70px;
+        margin-left: -450px;
+    }
 }
